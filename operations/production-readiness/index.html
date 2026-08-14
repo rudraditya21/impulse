@@ -160,7 +160,9 @@
             <div class="ml-auto flex items-center gap-2 md:flex-1 md:justify-end">
                 <div class="hidden w-full flex-1 md:flex md:w-auto md:flex-none">
                     <div class="hidden w-full flex-1 md:flex md:w-auto md:flex-none">
-    <button onclick="onSearchBarClick(event)" data-slot="dialog-trigger" data-variant="outline" data-size="default" class="inline-flex shrink-0 items-center gap-2 text-sm whitespace-nowrap transition-all outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*='size-'])]:size-4 border bg-background hover:text-accent-foreground dark:border-input dark:hover:bg-input/50 px-4 py-2 has-[&gt;svg]:px-3 relative h-8 w-full justify-start rounded-lg pl-3 font-normal text-foreground shadow-none hover:bg-muted/50 sm:pr-12 md:w-48 lg:w-56 xl:w-64 dark:bg-card" type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="radix-_r_1_" data-state="closed">
+    <button onclick="onSearchBarClick(event)" data-slot="dialog-trigger" data-variant="outline" data-size="default"
+        class="inline-flex shrink-0 items-center gap-2 text-sm whitespace-nowrap transition-all outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*='size-'])]:size-4 border bg-background hover:text-accent-foreground dark:border-input dark:hover:bg-input/50 px-4 py-2 has-[&gt;svg]:px-3 relative h-8 w-full justify-start rounded-lg pl-3 font-normal text-foreground shadow-none hover:bg-muted/50 sm:pr-12 md:w-48 lg:w-56 xl:w-64 dark:bg-card"
+        type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="radix-_r_1_" data-state="closed">
         <span class="hidden lg:inline-flex">Search documentation...</span>
         <span class="inline-flex lg:hidden">Search...</span>
     </button>
@@ -948,6 +950,25 @@
             
             <li data-slot="sidebar-menu-item" data-sidebar="menu-item" class="group/menu-item relative">
     <a data-slot="sidebar-menu-button" data-active="false" data-sidebar="menu-button"
+        data-size="default" href="../distributed-quota/"
+        class="peer/menu-button flex items-center gap-2 rounded-md p-2 text-left ring-sidebar-ring outline-hidden transition-[width,height,padding] group-has-data-[sidebar=menu-action]/menu-item:pr-8 group-data-[collapsible=icon]:size-8! group-data-[collapsible=icon]:p-2! focus-visible:ring-2 active:bg-sidebar-accent active:text-sidebar-accent-foreground disabled:pointer-events-none disabled:opacity-50 aria-disabled:pointer-events-none aria-disabled:opacity-50 data-[active=true]:font-medium data-[active=true]:text-sidebar-accent-foreground data-[state=open]:hover:bg-sidebar-accent data-[state=open]:hover:text-sidebar-accent-foreground [&>span:last-child]:truncate [&>svg]:size-4 [&>svg]:shrink-0 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground relative h-[30px] w-fit overflow-visible border border-transparent text-[0.8rem] font-medium after:absolute after:inset-x-0 after:-inset-y-1 after:z-0 after:rounded-md data-[active=true]:border-accent data-[active=true]:bg-accent 3xl:fixed:w-full 3xl:fixed:max-w-48">
+
+        
+        Distributed Quota
+        
+
+        
+
+        
+
+        
+    </a>
+</li>
+            
+            
+            
+            <li data-slot="sidebar-menu-item" data-sidebar="menu-item" class="group/menu-item relative">
+    <a data-slot="sidebar-menu-button" data-active="false" data-sidebar="menu-button"
         data-size="default" href="../runbook/"
         class="peer/menu-button flex items-center gap-2 rounded-md p-2 text-left ring-sidebar-ring outline-hidden transition-[width,height,padding] group-has-data-[sidebar=menu-action]/menu-item:pr-8 group-data-[collapsible=icon]:size-8! group-data-[collapsible=icon]:p-2! focus-visible:ring-2 active:bg-sidebar-accent active:text-sidebar-accent-foreground disabled:pointer-events-none disabled:opacity-50 aria-disabled:pointer-events-none aria-disabled:opacity-50 data-[active=true]:font-medium data-[active=true]:text-sidebar-accent-foreground data-[state=open]:hover:bg-sidebar-accent data-[state=open]:hover:text-sidebar-accent-foreground [&>span:last-child]:truncate [&>svg]:size-4 [&>svg]:shrink-0 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground relative h-[30px] w-fit overflow-visible border border-transparent text-[0.8rem] font-medium after:absolute after:inset-x-0 after:-inset-y-1 after:z-0 after:rounded-md data-[active=true]:border-accent data-[active=true]:bg-accent 3xl:fixed:w-full 3xl:fixed:max-w-48">
 
@@ -1381,8 +1402,9 @@
         </h1>
 
         <div class="flex items-center gap-2 pt-1.5">
+          
           <button
-    onclick="fetch(`https://supernova-labs-org.github.io/spooky/operations/production-readiness.md`).then((r) => r.blob()).then((blob) => navigator.clipboard.write([new ClipboardItem({ 'text/plain': blob })]))"
+    onclick="fetch(`../..`).then((r) => r.text()).then((text) => navigator.clipboard.write([new ClipboardItem({ 'text/plain': text })]))"
     data-slot="button" class="secondary cursor-pointer">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
         stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-copy ">
@@ -1393,6 +1415,7 @@
     </svg>
     <span class="max-md:hidden">Copy Page</span>
 </button>
+          
           
           <a data-slot="button" id="previous-button"
             class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*='size-'])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-secondary text-secondary-foreground hover:bg-secondary/80 extend-touch-target size-8 shadow-none md:size-7"
@@ -1439,7 +1462,7 @@
 <li>config hot reload covers most runtime settings, including live <code>log.level</code> changes, but not all: log format/file settings, tracing config, control-plane thread counts, and listener removal/bind-address changes still require a restart</li>
 <li>upstream forwarding is scheme-driven: HTTP/2 for <code>https://</code> backends, HTTP/1.1 for <code>http://</code> backends</li>
 <li>dynamic control-plane capability is file-reload based, not a granular per-object mutation API</li>
-<li>auth is limited to API key, local JWT, and per-upstream external auth (HTTP/OIDC); there is no generic policy engine, rate-limiting framework, or JWKS-based token validation</li>
+<li>auth is limited to API key, local JWT (<code>HS256</code>/<code>RS256</code>/<code>ES256</code>, with static keys or JWKS), and per-upstream external auth (HTTP/OIDC); there is no generic policy engine or rate-limiting framework</li>
 <li>service discovery is limited to DNS refresh rather than a richer orchestration-native model</li>
 </ul>
 <h2 id="production-ready-today">Production-Ready Today</h2>
@@ -1457,13 +1480,15 @@
 <li>overload handling through inflight limits, queue caps, adaptive admission, and brownout logic</li>
 <li>graceful drain and bounded shutdown behavior</li>
 <li>Prometheus metrics and control-plane health/readiness/runtime endpoints</li>
-<li>per-upstream API key and local JWT authentication, with scope/role checks</li>
+<li>per-upstream API key and local JWT authentication (<code>HS256</code>/<code>RS256</code>/<code>ES256</code>, static PEM/JWK keys or background-refreshed JWKS), with scope/role checks</li>
 <li>per-upstream async external auth (HTTP subrequest or OIDC discovery/introspection), non-blocking against the H3 loop, with configurable fail-open/fail-closed behavior and response-header allowlisting</li>
 </ul>
 <h2 id="production-capable-with-caveats">Production-Capable With Caveats</h2>
 <p>The following capabilities exist, but operators should treat them as features that still need careful rollout discipline:</p>
 <ul>
-<li>full configuration hot reload via <code>POST /admin/runtime/reload</code> (atomic runtime swap of routes, upstreams, backends, timeouts, limits, and resilience policies), and certificate-only reload for new handshakes — both without a full process restart</li>
+<li>full configuration hot reload (atomic runtime swap of routes, upstreams, backends, timeouts, limits, and resilience policies), and certificate-only reload for new handshakes — both without a full process restart</li>
+<li>staged activation — <code>POST /admin/runtime/validate</code> and <code>/preview</code> plan a config change and return its diff without touching the running runtime, and <code>/activate</code> commits it; prefer this over the legacy <code>POST /admin/runtime/reload</code> shortcut, which applies the change without surfacing the diff</li>
+<li>rollback to a retained generation via <code>POST /admin/runtime/rollback</code>; use <code>GET /admin/runtime/history</code> to pick a target whose <code>rollback_candidate</code> is <code>true</code>, and note that retained generations are capped at a fixed bound rather than kept indefinitely</li>
 <li>watchdog-driven recovery hooks</li>
 <li>DNS-based backend refresh and backend client rotation</li>
 <li>retry budget, circuit breaker, and hedging controls</li>
@@ -1478,7 +1503,7 @@
 <li>no upstream HTTP/3 forwarding mode</li>
 <li>no broad request mirroring, canary traffic splitting, or advanced traffic policy engine</li>
 <li>no first-class rate limiting framework</li>
-<li>no JWKS-based JWT validation, interactive OIDC login/session-cookie flows, or generic RBAC/policy engine beyond scope/role checks on JWT claims</li>
+<li>no interactive OIDC login/session-cookie flows, or generic RBAC/policy engine beyond scope/role checks on JWT claims</li>
 <li>no broad plugin or extension system</li>
 <li>no orchestration-native service discovery beyond DNS polling</li>
 </ul>
@@ -1505,7 +1530,7 @@
 <li>Live reconfiguration of the remaining restart-only settings (log format/file, tracing config, thread counts, listener removal/bind changes; <code>log.level</code> already reloads live).</li>
 <li>Refactoring of the oversized edge runtime into smaller subsystems.</li>
 <li>Fuzzing and deeper parser/protocol hardening.</li>
-<li>First-class rate limiting and a generic policy engine (auth now covers API key, local JWT, and external/OIDC checks).</li>
+<li>First-class rate limiting and a generic policy engine (auth now covers API key, local JWT with JWKS, and external/OIDC checks).</li>
 <li>Better operator guidance for rollout, recovery, and ongoing operations.</li>
 </ol>
 <h2 id="related-pages">Related Pages</h2>
@@ -1802,6 +1827,12 @@
                         <a class="text-2xl font-medium" href="../../deployment/migration/">
                             
                             Migration
+                            
+                        </a>
+                        
+                        <a class="text-2xl font-medium" href="../distributed-quota/">
+                            
+                            Distributed Quota
                             
                         </a>
                         

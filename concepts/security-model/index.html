@@ -160,7 +160,9 @@
             <div class="ml-auto flex items-center gap-2 md:flex-1 md:justify-end">
                 <div class="hidden w-full flex-1 md:flex md:w-auto md:flex-none">
                     <div class="hidden w-full flex-1 md:flex md:w-auto md:flex-none">
-    <button onclick="onSearchBarClick(event)" data-slot="dialog-trigger" data-variant="outline" data-size="default" class="inline-flex shrink-0 items-center gap-2 text-sm whitespace-nowrap transition-all outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*='size-'])]:size-4 border bg-background hover:text-accent-foreground dark:border-input dark:hover:bg-input/50 px-4 py-2 has-[&gt;svg]:px-3 relative h-8 w-full justify-start rounded-lg pl-3 font-normal text-foreground shadow-none hover:bg-muted/50 sm:pr-12 md:w-48 lg:w-56 xl:w-64 dark:bg-card" type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="radix-_r_1_" data-state="closed">
+    <button onclick="onSearchBarClick(event)" data-slot="dialog-trigger" data-variant="outline" data-size="default"
+        class="inline-flex shrink-0 items-center gap-2 text-sm whitespace-nowrap transition-all outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*='size-'])]:size-4 border bg-background hover:text-accent-foreground dark:border-input dark:hover:bg-input/50 px-4 py-2 has-[&gt;svg]:px-3 relative h-8 w-full justify-start rounded-lg pl-3 font-normal text-foreground shadow-none hover:bg-muted/50 sm:pr-12 md:w-48 lg:w-56 xl:w-64 dark:bg-card"
+        type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="radix-_r_1_" data-state="closed">
         <span class="hidden lg:inline-flex">Search documentation...</span>
         <span class="inline-flex lg:hidden">Search...</span>
     </button>
@@ -948,6 +950,25 @@
             
             <li data-slot="sidebar-menu-item" data-sidebar="menu-item" class="group/menu-item relative">
     <a data-slot="sidebar-menu-button" data-active="false" data-sidebar="menu-button"
+        data-size="default" href="../../operations/distributed-quota/"
+        class="peer/menu-button flex items-center gap-2 rounded-md p-2 text-left ring-sidebar-ring outline-hidden transition-[width,height,padding] group-has-data-[sidebar=menu-action]/menu-item:pr-8 group-data-[collapsible=icon]:size-8! group-data-[collapsible=icon]:p-2! focus-visible:ring-2 active:bg-sidebar-accent active:text-sidebar-accent-foreground disabled:pointer-events-none disabled:opacity-50 aria-disabled:pointer-events-none aria-disabled:opacity-50 data-[active=true]:font-medium data-[active=true]:text-sidebar-accent-foreground data-[state=open]:hover:bg-sidebar-accent data-[state=open]:hover:text-sidebar-accent-foreground [&>span:last-child]:truncate [&>svg]:size-4 [&>svg]:shrink-0 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground relative h-[30px] w-fit overflow-visible border border-transparent text-[0.8rem] font-medium after:absolute after:inset-x-0 after:-inset-y-1 after:z-0 after:rounded-md data-[active=true]:border-accent data-[active=true]:bg-accent 3xl:fixed:w-full 3xl:fixed:max-w-48">
+
+        
+        Distributed Quota
+        
+
+        
+
+        
+
+        
+    </a>
+</li>
+            
+            
+            
+            <li data-slot="sidebar-menu-item" data-sidebar="menu-item" class="group/menu-item relative">
+    <a data-slot="sidebar-menu-button" data-active="false" data-sidebar="menu-button"
         data-size="default" href="../../operations/runbook/"
         class="peer/menu-button flex items-center gap-2 rounded-md p-2 text-left ring-sidebar-ring outline-hidden transition-[width,height,padding] group-has-data-[sidebar=menu-action]/menu-item:pr-8 group-data-[collapsible=icon]:size-8! group-data-[collapsible=icon]:p-2! focus-visible:ring-2 active:bg-sidebar-accent active:text-sidebar-accent-foreground disabled:pointer-events-none disabled:opacity-50 aria-disabled:pointer-events-none aria-disabled:opacity-50 data-[active=true]:font-medium data-[active=true]:text-sidebar-accent-foreground data-[state=open]:hover:bg-sidebar-accent data-[state=open]:hover:text-sidebar-accent-foreground [&>span:last-child]:truncate [&>svg]:size-4 [&>svg]:shrink-0 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground relative h-[30px] w-fit overflow-visible border border-transparent text-[0.8rem] font-medium after:absolute after:inset-x-0 after:-inset-y-1 after:z-0 after:rounded-md data-[active=true]:border-accent data-[active=true]:bg-accent 3xl:fixed:w-full 3xl:fixed:max-w-48">
 
@@ -1381,8 +1402,9 @@
         </h1>
 
         <div class="flex items-center gap-2 pt-1.5">
+          
           <button
-    onclick="fetch(`https://supernova-labs-org.github.io/spooky/concepts/security-model.md`).then((r) => r.blob()).then((blob) => navigator.clipboard.write([new ClipboardItem({ 'text/plain': blob })]))"
+    onclick="fetch(`../..`).then((r) => r.text()).then((text) => navigator.clipboard.write([new ClipboardItem({ 'text/plain': text })]))"
     data-slot="button" class="secondary cursor-pointer">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
         stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-copy ">
@@ -1393,6 +1415,7 @@
     </svg>
     <span class="max-md:hidden">Copy Page</span>
 </button>
+          
           
           <a data-slot="button" id="previous-button"
             class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*='size-'])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-secondary text-secondary-foreground hover:bg-secondary/80 extend-touch-target size-8 shadow-none md:size-7"
@@ -1473,6 +1496,26 @@
 <li>It can trigger certificate reload.</li>
 <li>It must be treated as an admin surface, not a public endpoint.</li>
 </ul>
+<p>Admin-plane authentication factors supported today:</p>
+<ul>
+<li>bearer token only</li>
+<li>mTLS only</li>
+<li>mTLS + bearer token</li>
+</ul>
+<p>Compatibility mode:</p>
+<ul>
+<li>the legacy <code>observability.control_api.auth_token</code> is still accepted</li>
+<li>it is mapped to an admin-scoped static identity to preserve existing behavior during migration</li>
+<li>this is deliberate backward compatibility, not the recommended steady-state production posture</li>
+<li>because the config schema uses <code>deny_unknown_fields</code>, compatibility is one-way: newer binaries accept legacy configs, but older binaries reject configs that use the newer nested admin-plane fields</li>
+</ul>
+<p>Recommended production posture:</p>
+<ul>
+<li><code>observability.control_api.tls.client_auth.mode: required</code></li>
+<li>bearer token or role-bearing mTLS identity</li>
+<li>admin-network IP allowlisting</li>
+<li>dedicated audit stream enabled</li>
+</ul>
 <h2 id="downstream-tls-model">Downstream TLS Model</h2>
 <p>Spooky supports:</p>
 <ul>
@@ -1485,6 +1528,82 @@
 <li>current client-auth coverage is centered on the bootstrap TLS listener path</li>
 <li>operators should verify whether their exact ingress shape requires stronger mTLS guarantees on every downstream path before broad rollout</li>
 </ul>
+<h2 id="admin-plane-authentication-and-authorization-model">Admin-Plane Authentication And Authorization Model</h2>
+<p>The control API admin plane is separate from request-path auth.</p>
+<p>Authentication and authorization are evaluated in this order:</p>
+<ol>
+<li>source-address policy, if <code>observability.control_api.ip_allowlist</code> is configured</li>
+<li>authentication using bearer token, mTLS identity, or both</li>
+<li>authorization against the route-to-role contract</li>
+</ol>
+<p>Role model:</p>
+<ul>
+<li><code>viewer</code>: runtime snapshot and generation history reads</li>
+<li><code>operator</code>: <code>viewer</code> plus validate, preview, activate, rollback, reload, and cert reload</li>
+<li><code>admin</code>: <code>operator</code> plus restart and future destructive admin actions</li>
+</ul>
+<p>Response and failure contract:</p>
+<ul>
+<li><code>401 Unauthorized</code>: missing or invalid authentication</li>
+<li><code>403 Forbidden</code>: authenticated but under-scoped, or denied by source-address policy</li>
+<li>TLS handshake rejection: client certificate missing or invalid when control API mTLS is required</li>
+</ul>
+<p>Handshake rejection is not an HTTP response. It terminates the TLS connection before routing and should be diagnosed through control-plane TLS logs and audit output.</p>
+<p>Admin-plane route contract:</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Route family</th>
+<th>Minimum role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/health</code>, <code>/ready</code></td>
+<td>unauthenticated or separately configurable</td>
+</tr>
+<tr>
+<td><code>/admin/runtime</code></td>
+<td><code>viewer</code></td>
+</tr>
+<tr>
+<td><code>/admin/runtime/history</code></td>
+<td><code>viewer</code></td>
+</tr>
+<tr>
+<td><code>/admin/runtime/history/{generation}</code></td>
+<td><code>viewer</code></td>
+</tr>
+<tr>
+<td><code>/admin/runtime/validate</code></td>
+<td><code>operator</code></td>
+</tr>
+<tr>
+<td><code>/admin/runtime/preview</code></td>
+<td><code>operator</code></td>
+</tr>
+<tr>
+<td><code>/admin/runtime/activate</code></td>
+<td><code>operator</code></td>
+</tr>
+<tr>
+<td><code>/admin/runtime/rollback</code></td>
+<td><code>operator</code></td>
+</tr>
+<tr>
+<td><code>/admin/runtime/reload</code></td>
+<td><code>operator</code></td>
+</tr>
+<tr>
+<td><code>/admin/runtime/reload-certs</code></td>
+<td><code>operator</code></td>
+</tr>
+<tr>
+<td><code>/admin/runtime/restart</code></td>
+<td><code>admin</code></td>
+</tr>
+</tbody>
+</table></div>
 <h2 id="upstream-tls-model">Upstream TLS Model</h2>
 <p>Upstream trust behavior is controlled by configuration.</p>
 <p>Safe posture:</p>
@@ -1515,7 +1634,7 @@
 <p>Spooky supports per-upstream request authentication, checked in this order:</p>
 <ul>
 <li><strong>API key</strong>: a configured header is compared against a static key list. Local, synchronous, no network call.</li>
-<li><strong>JWT</strong>: local HS256 signature and claim validation (issuer, audience, clock skew), plus optional scope/role checks against token claims. Local, synchronous, no network call.</li>
+<li><strong>JWT</strong>: local signature and claim validation (issuer, audience, clock skew), plus optional scope/role checks against token claims. Supports <code>HS256</code> with a shared secret, and <code>RS256</code>/<code>ES256</code> against static PEM/JWK public keys or a remote JWKS endpoint. Always local and synchronous on the request path — JWKS keys are served from an in-memory cache refreshed in the background, never fetched during request validation.</li>
 <li><strong>External auth</strong>: an async HTTP subrequest (generic HTTP or OIDC-shaped) sent to a configured auth endpoint, gated before upstream admission so the request never reaches the backend while auth is pending. Only one external auth provider is supported per upstream, and it cannot be combined with API key or JWT in the current version.</li>
 </ul>
 <p>External auth details:</p>
@@ -1523,12 +1642,24 @@
 <li>The auth call runs on a dedicated HTTP client, isolated from upstream backend transport, inflight accounting, and health state — an auth outage cannot degrade backend routing.</li>
 <li>A decision maps to <code>Allow</code>, <code>Deny</code>, <code>Redirect</code>, or <code>Challenge</code>; only headers on an explicit allowlist are copied from the auth server's response into the response sent to the client.</li>
 <li>Failure mode (fail-open or fail-closed) is configured per provider. The default is fail-closed: a timeout or transport error denies the request rather than silently admitting it.</li>
-<li>OIDC mode uses discovery and token introspection to validate bearer tokens. It does not fetch or validate against JWKS, does not cache the discovery document (refetched per request), and does not implement interactive login or session-cookie flows.</li>
+<li>OIDC mode uses discovery and token introspection to validate bearer tokens. It does not cache the discovery document (refetched per request) and does not implement interactive login or session-cookie flows. For local signature validation against an issuer's published keys, use JWT auth with <code>jwks_url</code> instead.</li>
+</ul>
+<p>JWT signature verification details:</p>
+<ul>
+<li>The algorithm allowlist is explicit policy, not inferred from configured key material. A token whose <code>alg</code> header is absent from <code>allowed_algorithms</code> is rejected before any key is resolved, and <code>alg: none</code> never maps to a verification mode.</li>
+<li>Key type is re-checked at verification time, so an asymmetric public key can never satisfy an <code>HS256</code> token and vice versa.</li>
+<li>RSA keys below 2048 bits are rejected, whether configured statically or published via JWKS.</li>
+<li>Refresh failures never widen access: the last known-good key set keeps validating until the staleness window expires, after which requests are rejected rather than admitted.</li>
+</ul>
+<p>Boundary rule:</p>
+<ul>
+<li>request-path auth lives under upstream routing / forwarding policy</li>
+<li>admin-plane auth lives only under control-plane modules</li>
+<li>credentials, failures, and audit events from one plane must not be confused with the other</li>
 </ul>
 <h2 id="what-spooky-does-not-currently-provide">What Spooky Does Not Currently Provide</h2>
 <p>Spooky does not currently provide first-class:</p>
 <ul>
-<li>JWKS-based JWT validation or key rotation</li>
 <li>OIDC login flows (interactive/browser SSO) or session-cookie handling</li>
 <li>a generic RBAC/policy engine beyond scope/role checks on JWT claims</li>
 <li>WAF behavior</li>
@@ -1538,7 +1669,11 @@
 <h2 id="recommended-deployment-security-posture">Recommended Deployment Security Posture</h2>
 <ul>
 <li>keep the control API bound to loopback or a strongly isolated admin network</li>
-<li>use a strong control API token and rotate it as an administrative secret</li>
+<li>use explicit admin roles rather than a single all-powerful token when possible</li>
+<li>require control API mTLS in production</li>
+<li>use a strong control API token and rotate it as an administrative secret when bearer auth is enabled</li>
+<li>restrict control API source addresses with <code>ip_allowlist.cidrs</code></li>
+<li>enable the dedicated admin audit stream</li>
 <li>keep upstream certificate verification enabled in production</li>
 <li>run with least privilege after bind</li>
 <li>restrict filesystem write access to the minimum required paths</li>
@@ -1847,6 +1982,12 @@
                             
                         </a>
                         
+                        <a class="text-2xl font-medium" href="../../operations/distributed-quota/">
+                            
+                            Distributed Quota
+                            
+                        </a>
+                        
                         <a class="text-2xl font-medium" href="../../operations/runbook/">
                             
                             Runbook
@@ -2048,6 +2189,14 @@
             class="text-muted-foreground hover:text-foreground data-[active=true]:text-foreground text-[0.8rem] no-underline transition-colors data-[depth=3]:pl-4 data-[depth=4]:pl-6"
             data-active="false" data-depth="2" onClick="deferSetActiveTocLink('#downstream-tls-model');">
             Downstream TLS Model
+        </a>
+        
+
+        
+        <a href="#admin-plane-authentication-and-authorization-model"
+            class="text-muted-foreground hover:text-foreground data-[active=true]:text-foreground text-[0.8rem] no-underline transition-colors data-[depth=3]:pl-4 data-[depth=4]:pl-6"
+            data-active="false" data-depth="2" onClick="deferSetActiveTocLink('#admin-plane-authentication-and-authorization-model');">
+            Admin-Plane Authentication And Authorization Model
         </a>
         
 

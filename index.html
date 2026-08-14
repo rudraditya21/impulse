@@ -160,7 +160,9 @@
             <div class="ml-auto flex items-center gap-2 md:flex-1 md:justify-end">
                 <div class="hidden w-full flex-1 md:flex md:w-auto md:flex-none">
                     <div class="hidden w-full flex-1 md:flex md:w-auto md:flex-none">
-    <button onclick="onSearchBarClick(event)" data-slot="dialog-trigger" data-variant="outline" data-size="default" class="inline-flex shrink-0 items-center gap-2 text-sm whitespace-nowrap transition-all outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*='size-'])]:size-4 border bg-background hover:text-accent-foreground dark:border-input dark:hover:bg-input/50 px-4 py-2 has-[&gt;svg]:px-3 relative h-8 w-full justify-start rounded-lg pl-3 font-normal text-foreground shadow-none hover:bg-muted/50 sm:pr-12 md:w-48 lg:w-56 xl:w-64 dark:bg-card" type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="radix-_r_1_" data-state="closed">
+    <button onclick="onSearchBarClick(event)" data-slot="dialog-trigger" data-variant="outline" data-size="default"
+        class="inline-flex shrink-0 items-center gap-2 text-sm whitespace-nowrap transition-all outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*='size-'])]:size-4 border bg-background hover:text-accent-foreground dark:border-input dark:hover:bg-input/50 px-4 py-2 has-[&gt;svg]:px-3 relative h-8 w-full justify-start rounded-lg pl-3 font-normal text-foreground shadow-none hover:bg-muted/50 sm:pr-12 md:w-48 lg:w-56 xl:w-64 dark:bg-card"
+        type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="radix-_r_1_" data-state="closed">
         <span class="hidden lg:inline-flex">Search documentation...</span>
         <span class="inline-flex lg:hidden">Search...</span>
     </button>
@@ -948,6 +950,25 @@
             
             <li data-slot="sidebar-menu-item" data-sidebar="menu-item" class="group/menu-item relative">
     <a data-slot="sidebar-menu-button" data-active="false" data-sidebar="menu-button"
+        data-size="default" href="operations/distributed-quota/"
+        class="peer/menu-button flex items-center gap-2 rounded-md p-2 text-left ring-sidebar-ring outline-hidden transition-[width,height,padding] group-has-data-[sidebar=menu-action]/menu-item:pr-8 group-data-[collapsible=icon]:size-8! group-data-[collapsible=icon]:p-2! focus-visible:ring-2 active:bg-sidebar-accent active:text-sidebar-accent-foreground disabled:pointer-events-none disabled:opacity-50 aria-disabled:pointer-events-none aria-disabled:opacity-50 data-[active=true]:font-medium data-[active=true]:text-sidebar-accent-foreground data-[state=open]:hover:bg-sidebar-accent data-[state=open]:hover:text-sidebar-accent-foreground [&>span:last-child]:truncate [&>svg]:size-4 [&>svg]:shrink-0 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground relative h-[30px] w-fit overflow-visible border border-transparent text-[0.8rem] font-medium after:absolute after:inset-x-0 after:-inset-y-1 after:z-0 after:rounded-md data-[active=true]:border-accent data-[active=true]:bg-accent 3xl:fixed:w-full 3xl:fixed:max-w-48">
+
+        
+        Distributed Quota
+        
+
+        
+
+        
+
+        
+    </a>
+</li>
+            
+            
+            
+            <li data-slot="sidebar-menu-item" data-sidebar="menu-item" class="group/menu-item relative">
+    <a data-slot="sidebar-menu-button" data-active="false" data-sidebar="menu-button"
         data-size="default" href="operations/runbook/"
         class="peer/menu-button flex items-center gap-2 rounded-md p-2 text-left ring-sidebar-ring outline-hidden transition-[width,height,padding] group-has-data-[sidebar=menu-action]/menu-item:pr-8 group-data-[collapsible=icon]:size-8! group-data-[collapsible=icon]:p-2! focus-visible:ring-2 active:bg-sidebar-accent active:text-sidebar-accent-foreground disabled:pointer-events-none disabled:opacity-50 aria-disabled:pointer-events-none aria-disabled:opacity-50 data-[active=true]:font-medium data-[active=true]:text-sidebar-accent-foreground data-[state=open]:hover:bg-sidebar-accent data-[state=open]:hover:text-sidebar-accent-foreground [&>span:last-child]:truncate [&>svg]:size-4 [&>svg]:shrink-0 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground relative h-[30px] w-fit overflow-visible border border-transparent text-[0.8rem] font-medium after:absolute after:inset-x-0 after:-inset-y-1 after:z-0 after:rounded-md data-[active=true]:border-accent data-[active=true]:bg-accent 3xl:fixed:w-full 3xl:fixed:max-w-48">
 
@@ -1381,8 +1402,9 @@
         </h1>
 
         <div class="flex items-center gap-2 pt-1.5">
+          
           <button
-    onclick="fetch(`https://supernova-labs-org.github.io/spooky/README.md`).then((r) => r.blob()).then((blob) => navigator.clipboard.write([new ClipboardItem({ 'text/plain': blob })]))"
+    onclick="fetch(`.`).then((r) => r.text()).then((text) => navigator.clipboard.write([new ClipboardItem({ 'text/plain': text })]))"
     data-slot="button" class="secondary cursor-pointer">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
         stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-copy ">
@@ -1393,6 +1415,7 @@
     </svg>
     <span class="max-md:hidden">Copy Page</span>
 </button>
+          
           
           
           <a data-slot="button" id="next-button"
@@ -1460,7 +1483,7 @@
 </tr>
 </tbody>
 </table></div>
-<h3 id="developer-understand-the-architecture-contribute">Developer — understand the architecture, contribute</h3>
+<h3 id="architecture-understand-the-runtime-and-subsystem-ownership">Architecture — understand the runtime and subsystem ownership</h3>
 <div class="table-wrapper"><table>
 <thead>
 <tr>
@@ -1478,16 +1501,129 @@
 <td>Per-crate responsibilities, inter-crate boundaries, key types</td>
 </tr>
 <tr>
-<td><a href="user-guide/load-balancing/">Load Balancing</a></td>
-<td>All six algorithms with characteristics, use-case guidance, and config examples</td>
+<td><a href="architecture/quota-policy-contract/">Distributed Quota Contract</a></td>
+<td>Semantic contract for quota semantics, selector composition, and distributed counter behavior</td>
 </tr>
+<tr>
+<td><a href="development/codebase-map/">Codebase Map</a></td>
+<td>Current crate/module map and where major logic lives</td>
+</tr>
+<tr>
+<td><a href="development/invariants/">Development Invariants</a></td>
+<td>Core runtime invariants, ownership assumptions, and rules the code depends on</td>
+</tr>
+<tr>
+<td><a href="public-api-surface-inventory/">Public API Surface Inventory</a></td>
+<td>Current canonical public surfaces, hidden internals, and remaining intentional exports</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="control-plane-and-operations-runtime-control-observability-and-failure-handling">Control Plane and Operations — runtime control, observability, and failure handling</h3>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Document</th>
+<th>What you'll find</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="api/overview/">API Overview</a></td>
+<td>Metrics endpoint and control-plane HTTP surfaces at a high level</td>
+</tr>
+<tr>
+<td><a href="reference/control-api-reference/">Control API Reference</a></td>
+<td>Endpoint-by-endpoint control API contract</td>
+</tr>
+<tr>
+<td><a href="reference/metrics-reference/">Metrics Reference</a></td>
+<td>Metric names, labels, and exported runtime signals</td>
+</tr>
+<tr>
+<td><a href="operations/overview/">Operations Overview</a></td>
+<td>Operator map for deployment, sizing, tuning, and failure handling</td>
+</tr>
+<tr>
+<td><a href="operations/distributed-quota/">Distributed Quota</a></td>
+<td>Distributed quota policy examples, Redis setup, degraded-mode guidance, and operator interpretation</td>
+</tr>
+<tr>
+<td><a href="operations/runbook/">Runbook</a></td>
+<td>Day-2 operational procedures and troubleshooting flow</td>
+</tr>
+<tr>
+<td><a href="operations/failure-modes/">Failure Modes</a></td>
+<td>Expected degraded behaviors and what they mean operationally</td>
+</tr>
+<tr>
+<td><a href="operations/sizing-and-capacity/">Sizing and Capacity</a></td>
+<td>Capacity planning and scaling guidance</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="protocol-traffic-and-policy-reference">Protocol, traffic, and policy reference</h3>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Document</th>
+<th>What you'll find</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="user-guide/load-balancing/">Load Balancing</a></td>
+<td>Current balancing strategies, selection behavior, and config examples</td>
+</tr>
+<tr>
+<td><a href="protocols/http3/">HTTP/3</a></td>
+<td>HTTP/3 behavior and protocol-specific operational notes</td>
+</tr>
+<tr>
+<td><a href="protocols/quic/">QUIC</a></td>
+<td>QUIC transport behavior, constraints, and terminology</td>
+</tr>
+<tr>
+<td><a href="concepts/security-model/">Security Model</a></td>
+<td>Current trust boundaries, admin-plane assumptions, and missing security layers</td>
+</tr>
+<tr>
+<td><a href="reference/terminology/">Terminology</a></td>
+<td>Canonical definitions for listener, upstream, backend, route, drain, and related terms</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="developer-contribute-safely-against-the-current-architecture">Developer — contribute safely against the current architecture</h3>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Document</th>
+<th>What you'll find</th>
+</tr>
+</thead>
+<tbody>
 <tr>
 <td><a href="https://github.com/Supernova-Labs-Org/spooky/blob/master/CONTRIBUTING.md">Contributing Guide</a></td>
 <td>Dev setup, build commands, test matrix, PR conventions</td>
 </tr>
+<tr>
+<td><a href="development/overview/">Development Overview</a></td>
+<td>Contributor-oriented guide to working in the repo</td>
+</tr>
+<tr>
+<td><a href="development/testing-strategy/">Testing Strategy</a></td>
+<td>Contract, regression, and parity test expectations</td>
+</tr>
+<tr>
+<td><a href="development/benchmarking/">Benchmarking</a></td>
+<td>Benchmark crate, micro/macro suites, and regression-gate workflow</td>
+</tr>
+<tr>
+<td><a href="development/adding-features/">Adding Features</a></td>
+<td>Expectations for new features against the current architecture</td>
+</tr>
 </tbody>
 </table></div>
-<h3 id="reference-config-schema-api-benchmarks-changelog">Reference — config schema, API, benchmarks, changelog</h3>
+<h3 id="reference-schema-maturity-roadmap-and-release-state">Reference — schema, maturity, roadmap, and release state</h3>
 <div class="table-wrapper"><table>
 <thead>
 <tr>
@@ -1505,20 +1641,8 @@
 <td>Strict feature-by-feature inventory of what is done, partial, and missing</td>
 </tr>
 <tr>
-<td><a href="concepts/security-model/">Security Model</a></td>
-<td>Current trust boundaries, admin-plane assumptions, and missing security layers</td>
-</tr>
-<tr>
-<td><a href="reference/terminology/">Terminology</a></td>
-<td>Canonical definitions for listener, upstream, backend, route, drain, and related terms</td>
-</tr>
-<tr>
-<td><a href="api/overview/">API Overview</a></td>
-<td>Metrics endpoint, control API (health, ready, runtime), bearer auth</td>
-</tr>
-<tr>
-<td><a href="development/benchmarking/">Benchmarking</a></td>
-<td>Benchmark crate, micro/macro suites, and regression-gate workflow</td>
+<td><a href="reference/overview/">Reference Overview</a></td>
+<td>Index of the strict reference material and product limits</td>
 </tr>
 <tr>
 <td><a href="roadmap/">Roadmap</a></td>
@@ -1542,7 +1666,7 @@
 <tbody>
 <tr>
 <td>Version</td>
-<td>v0.3.1-beta</td>
+<td>v0.5.0-beta</td>
 </tr>
 <tr>
 <td>Maturity</td>
@@ -1920,6 +2044,12 @@ curl -k https://127.0.0.1:9902/ready
                             
                         </a>
                         
+                        <a class="text-2xl font-medium" href="operations/distributed-quota/">
+                            
+                            Distributed Quota
+                            
+                        </a>
+                        
                         <a class="text-2xl font-medium" href="operations/runbook/">
                             
                             Runbook
@@ -2094,16 +2224,34 @@ curl -k https://127.0.0.1:9902/ready
             Operator — install, configure, run in production
         </a>
         
-        <a href="#developer-understand-the-architecture-contribute"
+        <a href="#architecture-understand-the-runtime-and-subsystem-ownership"
             class="text-muted-foreground hover:text-foreground data-[active=true]:text-foreground text-[0.8rem] no-underline transition-colors data-[depth=3]:pl-4 data-[depth=4]:pl-6"
-            data-active="false" data-depth="3" onClick="deferSetActiveTocLink('#developer-understand-the-architecture-contribute');">
-            Developer — understand the architecture, contribute
+            data-active="false" data-depth="3" onClick="deferSetActiveTocLink('#architecture-understand-the-runtime-and-subsystem-ownership');">
+            Architecture — understand the runtime and subsystem ownership
         </a>
         
-        <a href="#reference-config-schema-api-benchmarks-changelog"
+        <a href="#control-plane-and-operations-runtime-control-observability-and-failure-handling"
             class="text-muted-foreground hover:text-foreground data-[active=true]:text-foreground text-[0.8rem] no-underline transition-colors data-[depth=3]:pl-4 data-[depth=4]:pl-6"
-            data-active="false" data-depth="3" onClick="deferSetActiveTocLink('#reference-config-schema-api-benchmarks-changelog');">
-            Reference — config schema, API, benchmarks, changelog
+            data-active="false" data-depth="3" onClick="deferSetActiveTocLink('#control-plane-and-operations-runtime-control-observability-and-failure-handling');">
+            Control Plane and Operations — runtime control, observability, and failure handling
+        </a>
+        
+        <a href="#protocol-traffic-and-policy-reference"
+            class="text-muted-foreground hover:text-foreground data-[active=true]:text-foreground text-[0.8rem] no-underline transition-colors data-[depth=3]:pl-4 data-[depth=4]:pl-6"
+            data-active="false" data-depth="3" onClick="deferSetActiveTocLink('#protocol-traffic-and-policy-reference');">
+            Protocol, traffic, and policy reference
+        </a>
+        
+        <a href="#developer-contribute-safely-against-the-current-architecture"
+            class="text-muted-foreground hover:text-foreground data-[active=true]:text-foreground text-[0.8rem] no-underline transition-colors data-[depth=3]:pl-4 data-[depth=4]:pl-6"
+            data-active="false" data-depth="3" onClick="deferSetActiveTocLink('#developer-contribute-safely-against-the-current-architecture');">
+            Developer — contribute safely against the current architecture
+        </a>
+        
+        <a href="#reference-schema-maturity-roadmap-and-release-state"
+            class="text-muted-foreground hover:text-foreground data-[active=true]:text-foreground text-[0.8rem] no-underline transition-colors data-[depth=3]:pl-4 data-[depth=4]:pl-6"
+            data-active="false" data-depth="3" onClick="deferSetActiveTocLink('#reference-schema-maturity-roadmap-and-release-state');">
+            Reference — schema, maturity, roadmap, and release state
         </a>
         
         

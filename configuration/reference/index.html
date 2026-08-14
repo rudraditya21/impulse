@@ -160,7 +160,9 @@
             <div class="ml-auto flex items-center gap-2 md:flex-1 md:justify-end">
                 <div class="hidden w-full flex-1 md:flex md:w-auto md:flex-none">
                     <div class="hidden w-full flex-1 md:flex md:w-auto md:flex-none">
-    <button onclick="onSearchBarClick(event)" data-slot="dialog-trigger" data-variant="outline" data-size="default" class="inline-flex shrink-0 items-center gap-2 text-sm whitespace-nowrap transition-all outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*='size-'])]:size-4 border bg-background hover:text-accent-foreground dark:border-input dark:hover:bg-input/50 px-4 py-2 has-[&gt;svg]:px-3 relative h-8 w-full justify-start rounded-lg pl-3 font-normal text-foreground shadow-none hover:bg-muted/50 sm:pr-12 md:w-48 lg:w-56 xl:w-64 dark:bg-card" type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="radix-_r_1_" data-state="closed">
+    <button onclick="onSearchBarClick(event)" data-slot="dialog-trigger" data-variant="outline" data-size="default"
+        class="inline-flex shrink-0 items-center gap-2 text-sm whitespace-nowrap transition-all outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*='size-'])]:size-4 border bg-background hover:text-accent-foreground dark:border-input dark:hover:bg-input/50 px-4 py-2 has-[&gt;svg]:px-3 relative h-8 w-full justify-start rounded-lg pl-3 font-normal text-foreground shadow-none hover:bg-muted/50 sm:pr-12 md:w-48 lg:w-56 xl:w-64 dark:bg-card"
+        type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="radix-_r_1_" data-state="closed">
         <span class="hidden lg:inline-flex">Search documentation...</span>
         <span class="inline-flex lg:hidden">Search...</span>
     </button>
@@ -948,6 +950,25 @@
             
             <li data-slot="sidebar-menu-item" data-sidebar="menu-item" class="group/menu-item relative">
     <a data-slot="sidebar-menu-button" data-active="false" data-sidebar="menu-button"
+        data-size="default" href="../../operations/distributed-quota/"
+        class="peer/menu-button flex items-center gap-2 rounded-md p-2 text-left ring-sidebar-ring outline-hidden transition-[width,height,padding] group-has-data-[sidebar=menu-action]/menu-item:pr-8 group-data-[collapsible=icon]:size-8! group-data-[collapsible=icon]:p-2! focus-visible:ring-2 active:bg-sidebar-accent active:text-sidebar-accent-foreground disabled:pointer-events-none disabled:opacity-50 aria-disabled:pointer-events-none aria-disabled:opacity-50 data-[active=true]:font-medium data-[active=true]:text-sidebar-accent-foreground data-[state=open]:hover:bg-sidebar-accent data-[state=open]:hover:text-sidebar-accent-foreground [&>span:last-child]:truncate [&>svg]:size-4 [&>svg]:shrink-0 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground relative h-[30px] w-fit overflow-visible border border-transparent text-[0.8rem] font-medium after:absolute after:inset-x-0 after:-inset-y-1 after:z-0 after:rounded-md data-[active=true]:border-accent data-[active=true]:bg-accent 3xl:fixed:w-full 3xl:fixed:max-w-48">
+
+        
+        Distributed Quota
+        
+
+        
+
+        
+
+        
+    </a>
+</li>
+            
+            
+            
+            <li data-slot="sidebar-menu-item" data-sidebar="menu-item" class="group/menu-item relative">
+    <a data-slot="sidebar-menu-button" data-active="false" data-sidebar="menu-button"
         data-size="default" href="../../operations/runbook/"
         class="peer/menu-button flex items-center gap-2 rounded-md p-2 text-left ring-sidebar-ring outline-hidden transition-[width,height,padding] group-has-data-[sidebar=menu-action]/menu-item:pr-8 group-data-[collapsible=icon]:size-8! group-data-[collapsible=icon]:p-2! focus-visible:ring-2 active:bg-sidebar-accent active:text-sidebar-accent-foreground disabled:pointer-events-none disabled:opacity-50 aria-disabled:pointer-events-none aria-disabled:opacity-50 data-[active=true]:font-medium data-[active=true]:text-sidebar-accent-foreground data-[state=open]:hover:bg-sidebar-accent data-[state=open]:hover:text-sidebar-accent-foreground [&>span:last-child]:truncate [&>svg]:size-4 [&>svg]:shrink-0 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground relative h-[30px] w-fit overflow-visible border border-transparent text-[0.8rem] font-medium after:absolute after:inset-x-0 after:-inset-y-1 after:z-0 after:rounded-md data-[active=true]:border-accent data-[active=true]:bg-accent 3xl:fixed:w-full 3xl:fixed:max-w-48">
 
@@ -1381,8 +1402,9 @@
         </h1>
 
         <div class="flex items-center gap-2 pt-1.5">
+          
           <button
-    onclick="fetch(`https://supernova-labs-org.github.io/spooky/configuration/reference.md`).then((r) => r.blob()).then((blob) => navigator.clipboard.write([new ClipboardItem({ 'text/plain': blob })]))"
+    onclick="fetch(`../..`).then((r) => r.text()).then((text) => navigator.clipboard.write([new ClipboardItem({ 'text/plain': text })]))"
     data-slot="button" class="secondary cursor-pointer">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
         stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-copy ">
@@ -1393,6 +1415,7 @@
     </svg>
     <span class="max-md:hidden">Copy Page</span>
 </button>
+          
           
           <a data-slot="button" id="previous-button"
             class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*='size-'])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-secondary text-secondary-foreground hover:bg-secondary/80 extend-touch-target size-8 shadow-none md:size-7"
@@ -1439,6 +1462,9 @@
 <li>what runtime behavior it changes</li>
 </ul>
 <p>Use <a href="../defaults/">Configuration Defaults</a> for the exhaustive default inventory and <a href="../examples/">Configuration Examples</a> for complete deployment patterns. Use this page when you need exact schema and semantics.</p>
+<p>For distributed quota policy examples, Redis backend posture, migration from
+legacy scoped rate limiting, and operator interpretation, see
+<a href="../../operations/distributed-quota/">Distributed Quota</a>.</p>
 <h2 id="scope-of-this-reference">Scope Of This Reference</h2>
 <p>This page covers:</p>
 <ul>
@@ -1446,6 +1472,7 @@
 <li>precedence and normalization rules</li>
 <li>validation behavior</li>
 <li>runtime meaning of major knobs</li>
+<li>the boundary between raw YAML input and runtime-normalized policy objects</li>
 </ul>
 <p>Default coverage now lives on <a href="../defaults/">Configuration Defaults</a> so the full inventory can stay centralized and easier to audit against the code.</p>
 <p>This page does not change the current product behavior:</p>
@@ -1458,6 +1485,42 @@
 <li>certificate reload (<code>POST /admin/runtime/reload-certs</code>) covers new handshakes only</li>
 <li>backend transport is scheme-driven: <code>https://</code> backends use HTTP/2, <code>http://</code> backends use HTTP/1.1</li>
 </ul>
+<h2 id="raw-config-vs-runtime-interpretation">Raw Config vs Runtime Interpretation</h2>
+<p>Spooky now has a clearer split between:</p>
+<ul>
+<li>raw configuration schema loaded from YAML</li>
+<li>normalized runtime configuration consumed by the rest of the system</li>
+</ul>
+<p>The raw schema is defined by the <code>config</code> module and is what this page documents field-by-field.</p>
+<p>The runtime model is defined by <code>crates/config/src/runtime.rs</code> and the domain interpreters under <code>crates/config/src/runtime/policies/</code>. Downstream crates should depend on that runtime model, not on the raw YAML shape.</p>
+<h3 id="canonical-runtime-boundary">Canonical runtime boundary</h3>
+<p>The important runtime outputs are:</p>
+<ul>
+<li><code>RuntimeConfig</code></li>
+<li><code>RuntimePolicySet</code></li>
+<li><code>RuntimeListenerPolicySet</code></li>
+<li><code>RuntimeUpstream</code></li>
+<li><code>RuntimeBackendEndpoint</code></li>
+<li><code>RuntimeLoadBalancingPolicy</code></li>
+<li><code>RuntimeAdmissionPolicy</code></li>
+<li><code>RuntimeAuthPolicy</code></li>
+<li><code>RuntimeTransportPolicy</code></li>
+<li><code>RuntimeTimeoutPolicy</code></li>
+</ul>
+<p>These types are the validated, normalized forms that <code>edge</code>, <code>transport</code>, and <code>lb</code> actually execute against.</p>
+<h3 id="what-normalization-means-in-practice">What normalization means in practice</h3>
+<p>Normalization is where Spooky resolves and validates things such as:</p>
+<ul>
+<li>listener selection precedence between <code>listen</code> and <code>listeners</code></li>
+<li>per-upstream override precedence over global defaults</li>
+<li>trimming and rejection of empty strings where fields must be meaningful</li>
+<li>route host and method canonicalization</li>
+<li>backend endpoint parsing and transport-kind derivation</li>
+<li>timeout conversion from raw millisecond fields into runtime <code>Duration</code>s</li>
+<li>cross-field validation for limits, inflight caps, and watchdog/retry policy</li>
+<li>route, auth, admission, backend, and load-balancing policy shaping</li>
+</ul>
+<p>If the raw YAML is accepted, the rest of the system should not need to reinterpret those rules again.</p>
 <h2 id="reading-this-reference">Reading This Reference</h2>
 <ul>
 <li>Start with <a href="../examples/">Configuration Examples</a> if you need a working template.</li>
@@ -1575,6 +1638,143 @@ log:
 <li>Per-upstream load-balancing settings override the top-level <code>load_balancing</code> fallback.</li>
 <li>Certificate reload updates listener TLS material for future handshakes; it does not rewrite the already-running route or upstream model.</li>
 </ol>
+<h2 id="runtime-interpretation-domains">Runtime Interpretation Domains</h2>
+<p>The runtime interpreter is now decomposed by policy domain. That split is important because it defines where runtime behavior is shaped and validated.</p>
+<h3 id="listener-and-listener-tls-interpretation">Listener and listener-TLS interpretation</h3>
+<p>The listener interpreter resolves:</p>
+<ul>
+<li>whether <code>listen</code> or <code>listeners[]</code> is authoritative</li>
+<li>listener source identity</li>
+<li>listener bind conflicts</li>
+<li>default TLS identity and SNI identities</li>
+<li>listener-scoped TLS reload inventory</li>
+</ul>
+<p>This produces runtime listener types such as:</p>
+<ul>
+<li><code>RuntimeListener</code></li>
+<li><code>RuntimeListenerTls</code></li>
+<li><code>ListenerRuntimeConfig</code></li>
+</ul>
+<h3 id="timeout-interpretation">Timeout interpretation</h3>
+<p>Timeout interpretation converts raw timeout fields into the canonical runtime timeout policy:</p>
+<ul>
+<li>backend request timeout</li>
+<li>backend connect timeout</li>
+<li>backend body idle and total timeouts</li>
+<li>shutdown drain timeout</li>
+<li>client body idle timeout</li>
+<li>backend DNS refresh interval</li>
+<li>QUIC idle timeout</li>
+</ul>
+<p>Cross-field ordering is validated here rather than by data-plane callers.</p>
+<h3 id="transport-interpretation">Transport interpretation</h3>
+<p>Transport interpretation shapes:</p>
+<ul>
+<li>worker and control-plane thread counts</li>
+<li>shard layout</li>
+<li>queue capacities</li>
+<li>UDP buffer sizing</li>
+<li>inflight limits</li>
+<li>backend connection reuse policy</li>
+<li>DNS refresh enablement</li>
+<li>body-size and prebuffer limits</li>
+</ul>
+<p>This produces:</p>
+<ul>
+<li><code>RuntimeTransportPolicy</code></li>
+<li><code>RuntimeConnectionLimits</code></li>
+<li><code>RuntimeBackendConnectionPolicy</code></li>
+</ul>
+<h3 id="auth-interpretation">Auth interpretation</h3>
+<p>Auth interpretation shapes:</p>
+<ul>
+<li>API key auth policy</li>
+<li>JWT auth policy</li>
+<li>external auth policy</li>
+<li>external auth failure mode</li>
+<li>external auth request-header shaping</li>
+</ul>
+<p>This produces runtime auth types such as:</p>
+<ul>
+<li><code>RuntimeAuthPolicy</code></li>
+<li><code>RuntimeApiKeyAuth</code></li>
+<li><code>RuntimeJwtAuth</code></li>
+<li><code>RuntimeExternalAuth</code></li>
+</ul>
+<h3 id="admission-and-rate-limit-interpretation">Admission and rate-limit interpretation</h3>
+<p>Admission interpretation shapes:</p>
+<ul>
+<li>brownout policy</li>
+<li>overload and route queue policy</li>
+<li>scoped rate-limit rules</li>
+<li>watchdog-related admission policy</li>
+</ul>
+<p>This produces:</p>
+<ul>
+<li><code>RuntimeAdmissionPolicy</code></li>
+<li><code>RuntimeRateLimitPolicy</code></li>
+<li><code>RuntimeScopedRateLimitPolicy</code></li>
+<li><code>RuntimeBrownoutPolicy</code></li>
+</ul>
+<h3 id="backend-interpretation">Backend interpretation</h3>
+<p>Backend interpretation shapes:</p>
+<ul>
+<li>canonical backend endpoint</li>
+<li>authority host and port</li>
+<li>hostname vs IP-literal classification</li>
+<li>runtime backend transport kind</li>
+<li>backend TLS policy</li>
+<li>backend DNS policy</li>
+<li>backend health-check policy</li>
+</ul>
+<p>This produces:</p>
+<ul>
+<li><code>RuntimeBackendEndpoint</code></li>
+<li><code>RuntimeBackendTlsPolicy</code></li>
+<li><code>RuntimeBackendDnsPolicy</code></li>
+<li><code>RuntimeBackendHealthCheck</code></li>
+</ul>
+<h3 id="load-balancing-interpretation">Load-balancing interpretation</h3>
+<p>Load-balancing interpretation shapes:</p>
+<ul>
+<li>canonical strategy</li>
+<li>request-key extraction spec</li>
+<li>alternate-backend behavior</li>
+</ul>
+<p>This produces:</p>
+<ul>
+<li><code>RuntimeLoadBalancingPolicy</code></li>
+<li><code>RuntimeLoadBalancingStrategy</code></li>
+<li><code>RuntimeRequestKeySpec</code></li>
+</ul>
+<h3 id="resilience-and-watchdog-interpretation">Resilience and watchdog interpretation</h3>
+<p>Resilience interpretation shapes:</p>
+<ul>
+<li>retry budget policy</li>
+<li>hedge policy</li>
+<li>circuit breaker policy</li>
+<li>watchdog runtime policy</li>
+</ul>
+<p>This produces:</p>
+<ul>
+<li><code>RuntimeRetryBudgetPolicy</code></li>
+<li><code>RuntimeHedgingPolicy</code></li>
+<li><code>RuntimeCircuitBreakerPolicy</code></li>
+<li><code>RuntimeWatchdogPolicy</code></li>
+</ul>
+<h2 id="how-to-read-field-semantics">How To Read Field Semantics</h2>
+<p>For each setting on this page, keep the following distinction in mind:</p>
+<ul>
+<li>raw schema semantics tell you what can be written in YAML</li>
+<li>runtime semantics tell you what the interpreter will actually execute after normalization</li>
+</ul>
+<p>Examples:</p>
+<ul>
+<li>a backend address string is raw input; <code>RuntimeBackendEndpoint</code> is the executed form</li>
+<li>a timeout field in milliseconds is raw input; <code>RuntimeTimeoutPolicy</code> is the executed form</li>
+<li>a <code>load_balancing.key</code> string is raw input; <code>RuntimeRequestKeySpec</code> is the executed form</li>
+<li>auth and admission nested objects are raw input; <code>RuntimeAuthPolicy</code> and <code>RuntimeAdmissionPolicy</code> are the executed forms</li>
+</ul>
 <h2 id="production-safe-defaults">Production-Safe Defaults</h2>
 <p>The configuration model is intentionally safe-by-default in several important areas:</p>
 <ul>
@@ -1623,8 +1823,20 @@ log:
 </table></div>
 <h3 id="listen">listen</h3>
 <p>Server listening configuration. Defines the protocol, address, and port for incoming client connections. Used as the single listener when <code>listeners</code> is absent or empty.</p>
+<p>Runtime interpretation:</p>
+<ul>
+<li>lowered into <code>RuntimeListener</code> plus <code>RuntimeListenerTls</code></li>
+<li>then wrapped into <code>ListenerRuntimeConfig</code> with normalized timeout and transport policy</li>
+<li>ignored for runtime listener selection when <code>listeners[]</code> is non-empty</li>
+</ul>
 <h3 id="listeners">listeners</h3>
 <p>Optional multi-listener array. When set, overrides the top-level <code>listen</code> block. Each entry is an independent listener with its own address, port, and TLS identity. Spooky spawns a separate QUIC worker group and bootstrap TLS listener per entry.</p>
+<p>Runtime interpretation:</p>
+<ul>
+<li>becomes the authoritative listener set when non-empty</li>
+<li>each entry is normalized independently</li>
+<li>duplicate bind combinations are rejected before startup or reload commit</li>
+</ul>
 <h3 id="runtime-normalization-and-precedence_1">Runtime Normalization And Precedence</h3>
 <p>Spooky normalizes configuration into one canonical runtime model before any listener starts.</p>
 <p>Precedence rules:</p>
@@ -1643,10 +1855,28 @@ log:
 <p>Startup rejects ambiguous or contradictory combinations, including duplicate effective listener binds, duplicate normalized route matchers, partial legacy listener cert/key pairs, invalid or duplicate SNI <code>server_name</code> entries, <code>host_policy.host</code> outside <code>mode: rewrite</code>, and <code>CONNECT</code> routing/policy conflicts.</p>
 <h3 id="upstream">upstream</h3>
 <p>Named upstream pool definitions. Each key represents a unique upstream pool with its own routing rules, load balancing strategy, and backend servers.</p>
+<p>Runtime interpretation:</p>
+<ul>
+<li>lowered into <code>RuntimeUpstream</code></li>
+<li>route matching becomes <code>RuntimeRouteMatchPolicy</code></li>
+<li>backend entries become <code>RuntimeBackend</code> plus <code>RuntimeBackendEndpoint</code></li>
+<li>effective upstream TLS, auth, admission, and load-balancing policy are resolved here</li>
+</ul>
 <h3 id="load_balancing">load_balancing</h3>
 <p>Optional global fallback for upstream load balancing. If an upstream omits <code>upstream.&lt;name&gt;.load_balancing</code>, the top-level <code>load_balancing</code> value is applied to that upstream during config load.</p>
+<p>Runtime interpretation:</p>
+<ul>
+<li>global fallback only</li>
+<li>each effective upstream receives a canonical <code>RuntimeLoadBalancingPolicy</code></li>
+<li>request key strings are parsed into <code>RuntimeRequestKeySpec</code></li>
+</ul>
 <h3 id="log">log</h3>
 <p>Logging configuration. Controls log level and output formatting.</p>
+<p>Runtime interpretation:</p>
+<ul>
+<li><code>log.level</code> participates in live reload</li>
+<li>log sink shape such as file output and format is treated as startup-owned and may require restart</li>
+</ul>
 <h2 id="default-values">Default Values</h2>
 <p>Spooky has a large number of defaults spread across helper functions and <code>Default</code> implementations. The central inventory now lives on <a href="../defaults/">Configuration Defaults</a>.</p>
 <p>Use that page when you need:</p>
@@ -1656,6 +1886,24 @@ log:
 <li>the difference between <code>null</code>, empty collections, empty strings, and structured section defaults</li>
 </ul>
 <p>This reference page keeps the schema and semantics, while <a href="../defaults/">Configuration Defaults</a> owns the exhaustive default matrix.</p>
+<h2 id="validation-model">Validation Model</h2>
+<p>Validation happens during runtime interpretation, not lazily in downstream crates.</p>
+<p>Important validation categories include:</p>
+<ul>
+<li>invalid listener bind combinations</li>
+<li>invalid or contradictory TLS identity configuration</li>
+<li>duplicate normalized route matchers</li>
+<li>invalid backend endpoint addresses</li>
+<li>unsupported load-balancing strategies or key specs</li>
+<li>zero or out-of-range timeout and limit values</li>
+<li>illegal cross-field timeout ordering</li>
+<li>unsupported watchdog or auth policy combinations</li>
+</ul>
+<p>The expected downstream contract is:</p>
+<ul>
+<li>if <code>RuntimeConfig::from_config(...)</code> succeeds, the runtime receives canonical and validated policy objects</li>
+<li>data-plane and control-plane crates should consume those objects rather than repeat raw-schema validation</li>
+</ul>
 <h2 id="listen-configuration">Listen Configuration</h2>
 <p>Configures the listening interface for incoming client connections. HTTP/3 requires TLS configuration.</p>
 <h3 id="properties">Properties</h3>
@@ -3892,6 +4140,12 @@ log:
                             
                         </a>
                         
+                        <a class="text-2xl font-medium" href="../../operations/distributed-quota/">
+                            
+                            Distributed Quota
+                            
+                        </a>
+                        
                         <a class="text-2xl font-medium" href="../../operations/runbook/">
                             
                             Runbook
@@ -4061,6 +4315,28 @@ log:
         
 
         
+        <a href="#raw-config-vs-runtime-interpretation"
+            class="text-muted-foreground hover:text-foreground data-[active=true]:text-foreground text-[0.8rem] no-underline transition-colors data-[depth=3]:pl-4 data-[depth=4]:pl-6"
+            data-active="false" data-depth="2" onClick="deferSetActiveTocLink('#raw-config-vs-runtime-interpretation');">
+            Raw Config vs Runtime Interpretation
+        </a>
+        
+        
+        <a href="#canonical-runtime-boundary"
+            class="text-muted-foreground hover:text-foreground data-[active=true]:text-foreground text-[0.8rem] no-underline transition-colors data-[depth=3]:pl-4 data-[depth=4]:pl-6"
+            data-active="false" data-depth="3" onClick="deferSetActiveTocLink('#canonical-runtime-boundary');">
+            Canonical runtime boundary
+        </a>
+        
+        <a href="#what-normalization-means-in-practice"
+            class="text-muted-foreground hover:text-foreground data-[active=true]:text-foreground text-[0.8rem] no-underline transition-colors data-[depth=3]:pl-4 data-[depth=4]:pl-6"
+            data-active="false" data-depth="3" onClick="deferSetActiveTocLink('#what-normalization-means-in-practice');">
+            What normalization means in practice
+        </a>
+        
+        
+
+        
         <a href="#reading-this-reference"
             class="text-muted-foreground hover:text-foreground data-[active=true]:text-foreground text-[0.8rem] no-underline transition-colors data-[depth=3]:pl-4 data-[depth=4]:pl-6"
             data-active="false" data-depth="2" onClick="deferSetActiveTocLink('#reading-this-reference');">
@@ -4097,6 +4373,72 @@ log:
             class="text-muted-foreground hover:text-foreground data-[active=true]:text-foreground text-[0.8rem] no-underline transition-colors data-[depth=3]:pl-4 data-[depth=4]:pl-6"
             data-active="false" data-depth="2" onClick="deferSetActiveTocLink('#runtime-normalization-and-precedence');">
             Runtime Normalization And Precedence
+        </a>
+        
+
+        
+        <a href="#runtime-interpretation-domains"
+            class="text-muted-foreground hover:text-foreground data-[active=true]:text-foreground text-[0.8rem] no-underline transition-colors data-[depth=3]:pl-4 data-[depth=4]:pl-6"
+            data-active="false" data-depth="2" onClick="deferSetActiveTocLink('#runtime-interpretation-domains');">
+            Runtime Interpretation Domains
+        </a>
+        
+        
+        <a href="#listener-and-listener-tls-interpretation"
+            class="text-muted-foreground hover:text-foreground data-[active=true]:text-foreground text-[0.8rem] no-underline transition-colors data-[depth=3]:pl-4 data-[depth=4]:pl-6"
+            data-active="false" data-depth="3" onClick="deferSetActiveTocLink('#listener-and-listener-tls-interpretation');">
+            Listener and listener-TLS interpretation
+        </a>
+        
+        <a href="#timeout-interpretation"
+            class="text-muted-foreground hover:text-foreground data-[active=true]:text-foreground text-[0.8rem] no-underline transition-colors data-[depth=3]:pl-4 data-[depth=4]:pl-6"
+            data-active="false" data-depth="3" onClick="deferSetActiveTocLink('#timeout-interpretation');">
+            Timeout interpretation
+        </a>
+        
+        <a href="#transport-interpretation"
+            class="text-muted-foreground hover:text-foreground data-[active=true]:text-foreground text-[0.8rem] no-underline transition-colors data-[depth=3]:pl-4 data-[depth=4]:pl-6"
+            data-active="false" data-depth="3" onClick="deferSetActiveTocLink('#transport-interpretation');">
+            Transport interpretation
+        </a>
+        
+        <a href="#auth-interpretation"
+            class="text-muted-foreground hover:text-foreground data-[active=true]:text-foreground text-[0.8rem] no-underline transition-colors data-[depth=3]:pl-4 data-[depth=4]:pl-6"
+            data-active="false" data-depth="3" onClick="deferSetActiveTocLink('#auth-interpretation');">
+            Auth interpretation
+        </a>
+        
+        <a href="#admission-and-rate-limit-interpretation"
+            class="text-muted-foreground hover:text-foreground data-[active=true]:text-foreground text-[0.8rem] no-underline transition-colors data-[depth=3]:pl-4 data-[depth=4]:pl-6"
+            data-active="false" data-depth="3" onClick="deferSetActiveTocLink('#admission-and-rate-limit-interpretation');">
+            Admission and rate-limit interpretation
+        </a>
+        
+        <a href="#backend-interpretation"
+            class="text-muted-foreground hover:text-foreground data-[active=true]:text-foreground text-[0.8rem] no-underline transition-colors data-[depth=3]:pl-4 data-[depth=4]:pl-6"
+            data-active="false" data-depth="3" onClick="deferSetActiveTocLink('#backend-interpretation');">
+            Backend interpretation
+        </a>
+        
+        <a href="#load-balancing-interpretation"
+            class="text-muted-foreground hover:text-foreground data-[active=true]:text-foreground text-[0.8rem] no-underline transition-colors data-[depth=3]:pl-4 data-[depth=4]:pl-6"
+            data-active="false" data-depth="3" onClick="deferSetActiveTocLink('#load-balancing-interpretation');">
+            Load-balancing interpretation
+        </a>
+        
+        <a href="#resilience-and-watchdog-interpretation"
+            class="text-muted-foreground hover:text-foreground data-[active=true]:text-foreground text-[0.8rem] no-underline transition-colors data-[depth=3]:pl-4 data-[depth=4]:pl-6"
+            data-active="false" data-depth="3" onClick="deferSetActiveTocLink('#resilience-and-watchdog-interpretation');">
+            Resilience and watchdog interpretation
+        </a>
+        
+        
+
+        
+        <a href="#how-to-read-field-semantics"
+            class="text-muted-foreground hover:text-foreground data-[active=true]:text-foreground text-[0.8rem] no-underline transition-colors data-[depth=3]:pl-4 data-[depth=4]:pl-6"
+            data-active="false" data-depth="2" onClick="deferSetActiveTocLink('#how-to-read-field-semantics');">
+            How To Read Field Semantics
         </a>
         
 
@@ -4173,6 +4515,14 @@ log:
             class="text-muted-foreground hover:text-foreground data-[active=true]:text-foreground text-[0.8rem] no-underline transition-colors data-[depth=3]:pl-4 data-[depth=4]:pl-6"
             data-active="false" data-depth="2" onClick="deferSetActiveTocLink('#default-values');">
             Default Values
+        </a>
+        
+
+        
+        <a href="#validation-model"
+            class="text-muted-foreground hover:text-foreground data-[active=true]:text-foreground text-[0.8rem] no-underline transition-colors data-[depth=3]:pl-4 data-[depth=4]:pl-6"
+            data-active="false" data-depth="2" onClick="deferSetActiveTocLink('#validation-model');">
+            Validation Model
         </a>
         
 
